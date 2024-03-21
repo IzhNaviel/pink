@@ -1,12 +1,201 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: {{Pink}}</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page__header">
+      <div class="wrapper">
+        <a href="/" class="page-header__logo logo">
+          <img class="page-header__logo-image" src="../source/img/logo.svg" alt="Pink">
+          <span class="page-header__logo-text">Pink</span>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__menu-list site-menu">
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">Главная</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">Фотографии</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">Конкурс</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">html academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink</h1>
+      <section class="hero">
+        <div class="wrapper">
+          <h2 class="hero__title">Взгляните на жизнь иначе!</h2>
+          <img class="hero__image" src="../source/img/intro.png" width="320" alt="Intro-phone">
+          <button class="hero__button button" type="button">Скачать приложение</button>
+        </div>
+        <div class="hero__device hero__device--mobile">
+          <ul class="device__list">
+            <li class="device__item">
+              <a class="device__link" href="#">
+                <img src="../source/img/apple-logo.svg" width="47" height="56" alt="Apple logo">
+              </a>
+            </li>
+            <li class="device__item">
+              <a class="device__link" href="#">
+                <img src="../source/img/android-logo.svg" width="43" height="47" alt="Android logo">
+              </a>
+            </li>
+            <li class="device__item">
+              <a class="device__link" href="#">
+                <img src="../source/img/microsoft-logo.svg" width="44" height="41" alt="Microsoft logo">
+              </a>
+            </li>
+          </ul>
+          <p class="devices__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="iformation">
+        <div class="wrapper">
+          <img class="inormation__image" src="../source/img/advantages-image.png" alt="Информация">
+          <h2 class="information__title">Устали от серости мегаполиса?Нам есть, что вам предложить!</h2>
+          <ul class="iformation__advantages-list">
+            <li class="information__advantages-item">
+              <h3 class="information__advantages-title">Поднимает настроение</h3>
+              <p class="information__advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="information__advantages-item">
+              <h3 class="information__advantages-title">Меняет мир вокруг</h3>
+              <p class="information__advantages-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="information__advantages-item">
+              <h3 class="information__advantages-title">Заводит новых друзей</h3>
+              <p class="information__advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <article class="effect">
+        <img src="../source/img/timer.png" alt="Эффект 24 часа" class="effect_image">
+        <h2 class="effect__title">Эффект на 24 часа!</h2>
+        <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#" class="effect__link">Узнать больше об исследовании</a>
+      </article>
+      <section class="reviews">
+        <h2 class="visually-hedden reviews__title">Отзывы</h2>
+        <div class="wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">              
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="price">
+        <div class="wrapper">
+          <table class="price__table">
+            <th class="price__header">
+              <td class="price__tarifs price-tarifs--first"></td>
+              <td class="price__tarifs">
+                <span class="price__tarif-title">База</span>
+                <span class="price__tarif-cost">1,99 USD</span>
+              </td>
+              <td class="price__tarifs tarif-hit">
+                <span class="price__tarif-title">Стандарт</span>
+                <span class="price__tarif-cost">3,99 USD</span>
+              </td>
+              <td class="price__tarifs">
+                <span class="price__tarif-title">Анлим</span>
+                <span class="price__tarif-cost">9,99 USD</span>
+              </td>
+            </th>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td><img src="../source/img/yes.svg" width="31" height="21" alt="Yes"></td>
+              <td><img src="../source/img/yes.svg" width="31" height="21" alt="Yes"></td>
+              <td><img src="../source/img/yes.svg" width="31" height="21" alt="Yes"></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td><img src="../source/img/no.svg" width="27" height="27" alt="No"></td>
+              <td><img src="../source/img/yes.svg" width="31" height="21" alt="Yes"></td>
+              <td><img src="../source/img/yes.svg" width="31" height="21" alt="Yes"></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td><img src="../source/img/no.svg" width="27" height="27" alt="No"></td>
+              <td><img src="../source/img/no.svg" width="27" height="27" alt="No"></td>
+              <td><img src="../source/img/yes.svg" alt="Yes"></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper contacts-wrapper">
+          <h2 class="contacts__header">Остались вопросы?Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contact__item">
+              <h3 class="contacts__title">Звоните:</h3>
+              <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contact__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contact__item">
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <div class="contacts__map">
+            <img src="../source/img/map.jpg" alt="карта">
+            <img src="../source/img/map marker.png" alt="Маркер">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper footer-wrapper">
+        <a href="/" class="page-footer__logo logo">
+          <img class="page-footer__logo-image" src="../source/img/logo.svg" alt="Pink">
+          <span class="page-footer__logo-text">Pink</span>
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="../source/img/twitter.svg" width="18" height="14" alt="Twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="../source/img/facebook.svg" width="9" height="18" alt="Facebok">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="../source/img/youtube.svg" width="15" height="13" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a href="#" class="copyright__link"><img src="../source/img/htmlacademy.svg" width="27" height="34" alt="HTML ACADEMY"></a>
+      </div>
+    </footer>
   </body>
 </html>
